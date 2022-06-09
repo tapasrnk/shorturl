@@ -11,7 +11,11 @@ import java.security.NoSuchAlgorithmException;
 @Component
 @Scope("singleton")
 public class Hash {
-    // https://stackoverflow.com/a/30119004
+    /**
+     * @param input A String to be hashed
+     * @return Hashed String(hex) using Md5 algorithms
+     * @see <a href="https://stackoverflow.com/a/30119004">Stack Overflow</a>
+     */
     public String getMd5(String input) {
         try {
             MessageDigest md5 = MessageDigest.getInstance("MD5");
