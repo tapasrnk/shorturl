@@ -1,6 +1,6 @@
-package com.webapp.shorturl.daoservice;
+package com.webapp.shorturl.storage.daoservice;
 
-import com.webapp.shorturl.dao.Url;
+import com.webapp.shorturl.storage.dao.Url;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UrlRepository extends JpaRepository<Url, String> {

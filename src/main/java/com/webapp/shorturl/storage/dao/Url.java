@@ -1,4 +1,4 @@
-package com.webapp.shorturl.dao;
+package com.webapp.shorturl.storage.dao;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

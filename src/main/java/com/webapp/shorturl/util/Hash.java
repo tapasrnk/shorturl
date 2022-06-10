@@ -16,7 +16,7 @@ public class Hash {
      * @return Hashed String(hex) using Md5 algorithms
      * @see <a href="https://stackoverflow.com/a/30119004">Stack Overflow</a>
      */
-    public String getMd5(String input) {
+    private String getMd5(String input) {
         try {
             MessageDigest md5 = MessageDigest.getInstance("MD5");
             md5.update(StandardCharsets.UTF_8.encode(input));
@@ -26,4 +26,15 @@ public class Hash {
             throw new RuntimeException(e);
         }
     }
+
+    /**
+     * rehash the given hash with concatenating with the given param
+     * @param input : Any string to be hashed with param
+     * @param param : Initially a random sting, later will be replaced by User_id or cookie token.
+     * @return : rehashed string
+     */
+    public String hashMD5(String input, String param) {
+        return getMd5(input + param);
+    }
+
 }
