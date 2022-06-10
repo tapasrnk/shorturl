@@ -1,0 +1,15 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:mysql://${USERNAME}:${PASSWORD}@${HOST}:${PORT}/${DB}
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: ${USERNAME}
+    password: ${PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
