@@ -13,3 +13,6 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+java:
+  runtime:
+    version: 11.0.15
