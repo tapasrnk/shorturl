@@ -15,4 +15,4 @@ spring:
       matching-strategy: ant_path_matcher
 java:
   runtime:
-    version: 11.0.15
+    version: 11
